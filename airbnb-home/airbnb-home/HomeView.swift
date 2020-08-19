@@ -9,40 +9,38 @@
 import SwiftUI
 
 struct HomeView: View {
-    var home: Home
-    var width: CGFloat = 270
-    var height: CGFloat = 575
+    var width: CGFloat = 275
+    var height: CGFloat = 425
+    var borderRounded: CGFloat = 20
     
     var body: some View {
-        
-        // First view with big image
-        GeometryReader { bounds in
-            ScrollView {
-                VStack {
-                    self.home.image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: self.width, height: self.height)
-                }
-                .cornerRadius(30)
-                .shadow(color: self.home.color.opacity(0.3), radius: 20, x: 0, y: 20)
+        // First card with big image
+        ScrollView {
+            VStack() {
+                Image("airbnb-home-cardPrincipal")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: self.width, height: self.height)
             }
+            .cornerRadius(borderRounded)
             
             // Stack horizontal with images
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 20) {
-                    ForEach(homeData) { item in
-                        GeometryReader { geometry in
-                            HomeView(home: item)
-                                .rotation3DEffect(Angle(degrees:
-                                    Double(geometry.frame(in: .global).minX - 30) / -getAngleMultiplier(bounds: bounds)
-                                ), axis: (x: 0, y: 10, z: 0))
+            GeometryReader { bounds in
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 20) {
+                        ForEach(homeData) { item in
+                            GeometryReader { geometry in
+                                Home(item)
+                                    .rotation3DEffect(Angle(degrees:
+                                        Double(geometry.frame(in: .global).minX - 30) / -getAngleMultiplier(bounds: bounds)
+                                    ), axis: (x: 0, y: 10, z: 0))
+                            }
+                            .frame(width: 275, height: 275)
                         }
-                        .frame(width: 275, height: 275)
                     }
+                    .padding(30)
+                    .padding(.bottom, 30)
                 }
-                .padding(30)
-                .padding(.bottom, 30)
             }
         }
     }
@@ -58,7 +56,6 @@ func getAngleMultiplier(bounds: GeometryProxy) -> Double {
 
 struct Home: Identifiable {
     var id = UUID()
-    var text: String
     var image: Image
     var color: Color
 }
@@ -71,6 +68,6 @@ let homeData = [
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(home: self)
+        HomeView()
     }
 }
