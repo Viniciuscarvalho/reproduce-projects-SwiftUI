@@ -20,8 +20,14 @@ struct ExperiencesCell: View {
                 .foregroundColor(.black)
                 .fontWeight(.semibold)
                 .font(.subheadline)
-            
+            HStack {
+                Text(data.subtitle ?? "")
+                    .foregroundColor(.black)
+                    .font(.system(size: 14, weight: .light))
+                    .frame(width: 160, alignment: .leading)
+            }
         }
+        
     }
 }
 

@@ -11,7 +11,7 @@ import SwiftUI
 struct ExperiencesSectionView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 16) {
+            HStack(spacing: 12) {
                 ForEach(GenericContent.experiencesData) { item in
                     ExperiencesCell(data: item)
                 }

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EA2B846724E96FAB004AB4C9 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B846624E96FAB004AB4C9 /* TabBar.swift */; };
-		EA7A2D5624DC877900D1FBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A2D5524DC877900D1FBCC /* AppDelegate.swift */; };
-		EA7A2D5824DC877900D1FBCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A2D5724DC877900D1FBCC /* SceneDelegate.swift */; };
 		EA7A2D5A24DC877900D1FBCC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A2D5924DC877900D1FBCC /* HomeView.swift */; };
 		EA7A2D5C24DC877E00D1FBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7A2D5B24DC877E00D1FBCC /* Assets.xcassets */; };
 		EA7A2D5F24DC877E00D1FBCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7A2D5E24DC877E00D1FBCC /* Preview Assets.xcassets */; };
@@ -17,13 +15,15 @@
 		EAAABDCA253737790082A76A /* GenericContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAABDC9253737790082A76A /* GenericContent.swift */; };
 		EAAABDCE253739290082A76A /* ExperiencesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAABDCD253739290082A76A /* ExperiencesSectionView.swift */; };
 		EAAABDD225373B6F0082A76A /* ExperiencesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAABDD125373B6F0082A76A /* ExperiencesCell.swift */; };
+		EACED3D3253B9A5F0039A95D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACED3D2253B9A5F0039A95D /* ContentView.swift */; };
+		EACED3D6253B9A9A0039A95D /* Airbnb-homeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACED3D5253B9A9A0039A95D /* Airbnb-homeApp.swift */; };
+		EACED3DB253BA1CD0039A95D /* OnlineExperiencesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACED3DA253BA1CD0039A95D /* OnlineExperiencesSectionView.swift */; };
+		EACED3DE253BA2900039A95D /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACED3DD253BA2900039A95D /* SectionTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA2B846624E96FAB004AB4C9 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		EA7A2D5224DC877900D1FBCC /* airbnb-home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "airbnb-home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA7A2D5524DC877900D1FBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA7A2D5724DC877900D1FBCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA7A2D5924DC877900D1FBCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EA7A2D5B24DC877E00D1FBCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA7A2D5E24DC877E00D1FBCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -32,6 +32,10 @@
 		EAAABDC9253737790082A76A /* GenericContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericContent.swift; sourceTree = "<group>"; };
 		EAAABDCD253739290082A76A /* ExperiencesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesSectionView.swift; sourceTree = "<group>"; };
 		EAAABDD125373B6F0082A76A /* ExperiencesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesCell.swift; sourceTree = "<group>"; };
+		EACED3D2253B9A5F0039A95D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EACED3D5253B9A9A0039A95D /* Airbnb-homeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Airbnb-homeApp.swift"; sourceTree = "<group>"; };
+		EACED3DA253BA1CD0039A95D /* OnlineExperiencesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineExperiencesSectionView.swift; sourceTree = "<group>"; };
+		EACED3DD253BA2900039A95D /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,8 @@
 			children = (
 				EAAABDC8253737640082A76A /* Model */,
 				EAAABDC425372AE30082A76A /* Views */,
-				EA7A2D5524DC877900D1FBCC /* AppDelegate.swift */,
-				EA7A2D5724DC877900D1FBCC /* SceneDelegate.swift */,
+				EACED3D2253B9A5F0039A95D /* ContentView.swift */,
+				EACED3D5253B9A9A0039A95D /* Airbnb-homeApp.swift */,
 				EA7A2D5B24DC877E00D1FBCC /* Assets.xcassets */,
 				EA7A2D6024DC877E00D1FBCC /* LaunchScreen.storyboard */,
 				EA7A2D6324DC877E00D1FBCC /* Info.plist */,
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				EAAABDCD253739290082A76A /* ExperiencesSectionView.swift */,
+				EACED3DA253BA1CD0039A95D /* OnlineExperiencesSectionView.swift */,
+				EACED3DD253BA2900039A95D /* SectionTitle.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7A2D5624DC877900D1FBCC /* AppDelegate.swift in Sources */,
-				EA7A2D5824DC877900D1FBCC /* SceneDelegate.swift in Sources */,
+				EACED3DE253BA2900039A95D /* SectionTitle.swift in Sources */,
+				EACED3D6253B9A9A0039A95D /* Airbnb-homeApp.swift in Sources */,
+				EACED3DB253BA1CD0039A95D /* OnlineExperiencesSectionView.swift in Sources */,
+				EACED3D3253B9A5F0039A95D /* ContentView.swift in Sources */,
 				EAAABDCE253739290082A76A /* ExperiencesSectionView.swift in Sources */,
 				EA7A2D5A24DC877900D1FBCC /* HomeView.swift in Sources */,
 				EA2B846724E96FAB004AB4C9 /* TabBar.swift in Sources */,
@@ -353,6 +361,7 @@
 				DEVELOPMENT_TEAM = 6U8286L9PF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "airbnb-home/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +382,7 @@
 				DEVELOPMENT_TEAM = 6U8286L9PF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "airbnb-home/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

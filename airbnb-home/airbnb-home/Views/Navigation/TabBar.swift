@@ -12,11 +12,25 @@ struct TabBar: View {
     var body: some View {
         TabView {
             HomeView().tabItem {
-                Image("explore.fill")
                 Text("Explore")
             }
+            
             HomeView().tabItem {
+                Image("save.stack.fill")
                 Text("Saved")
+            }
+            
+            HomeView().tabItem {
+                Text("Trips")
+            }
+            
+            HomeView().tabItem {
+                Image(systemName: "rectangle.stack.fill")
+                Text("Inbox")
+            }
+            
+            HomeView().tabItem {
+                Text("Profile")
             }
         }
     }
