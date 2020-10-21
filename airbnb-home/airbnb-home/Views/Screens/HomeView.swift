@@ -18,13 +18,13 @@ struct HomeView: View {
                         Image("airbnb-home-cardPrincipal")
                             .resizable()
                             .cornerRadius(6)
-                            .frame(width: 315, height: 420)
+                            .frame(width: 315, height: 400)
                             .foregroundColor(.white)
                     }
                 }
                 .padding(16)
                 .padding(.trailing, 16)
-                .padding(.leading, -16)
+                .padding(.leading, 16)
                 
                 ExperiencesSectionView()
                 SectionTitle(title: "Online Experiences: Field Tips")

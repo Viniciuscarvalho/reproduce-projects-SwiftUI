@@ -23,6 +23,8 @@ struct SectionTitle: View {
 
 struct SectionTitle_Previews: PreviewProvider {
     static var previews: some View {
-        SectionTitle(title: "Online Experiences: Field Tips").previewLayout(.sizeThatFits).background(Color.black)
+        SectionTitle(title: "Online Experiences: Field Tips")
+            .previewLayout(.sizeThatFits)
+            .background(Color.black)
     }
 }
